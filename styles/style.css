@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fondo con degradado de rosa pastel a azul pastel */
+    background: linear-gradient(135deg, #FFD1DC, #B0E0E6);
+    
+}
+
+
+.link{
+    align-items: center;
+    text-align: center;
+    height: 180px;
+    font-size: 50px;
+    
+}
+a {
+    display: inline-block;        /* para que se comporte como botón */
+    font-weight: bold;            /* negrilla */
+    text-decoration: none;        /* quita la raya */
+    background-color: #b4d1f1;    /* color de fondo pastel */
+    color: #222;                  /* texto oscuro */
+    padding: 10px 20px;           /* espacio interno */
+    border-radius: 999px;         /* hace que parezca un óvalo */
+    transition: all 0.3s ease; 
+    font-family: "Kranky", serif;
+  font-style: normal;   /* animación suave */
+}
+
+a:hover {
+    background-color: #ffbfc8;    /* cambia color al pasar el mouse */
+    color: #000;                  /* texto un poco más fuerte */
+}
+ 
+
+.h1{
+    text-align: center;
+    -webkit-text-fill-color: black;
+
+}
+
+
+.titulo{
+    font-family: "Kranky", serif;
+  font-style: normal;
+    align-items: center;
+    text-align: center;
+    font-size: 500%;
+    font-style: oblique;
+    font-weight: bold;
+}

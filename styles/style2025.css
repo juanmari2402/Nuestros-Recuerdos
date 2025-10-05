@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fondo con degradado de rosa pastel a azul pastel */
+    background: linear-gradient(135deg, #FFD1DC, #B0E0E6);
+    
+}
+.anecdotaContainer{
+     display: flex;
+    flex-direction: row;   /* coloca los hijos en fila */
+  /* centra las cards horizontalmente */
+  justify-content: center;
+    align-items: flex-start; /* alinea arriba las cards */
+    gap: 100px;              /* espacio entre tarjetas */
+    flex-wrap: wrap;        /* permite que bajen si no entran */
+    padding: 20px;
+
+
+}
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 450px; /* ancho flexible mínimo 250px */
+    max-width: 300px; 
+}
+
+
+.image-container {
+    margin-bottom: 1.5rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Estilo para el área del mensaje */
+.message-box {
+    color: #333;
+    line-height: 1.6;
+}
+
+.titulo{
+    align-items: center;
+    text-align: center;
+}
+.titulo h1 {
+     font-family: "Kranky", serif;
+  font-style: normal;
+    font-weight: bold;          /* negrita */
+    font-size: 150px;            /* más grande */
+    color: #333;                /* texto gris oscuro (negro claro) */
+    background-color: #fff;     /* fondo blanco */
+    padding: 10px 40px;         /* espacio alrededor */
+    border-radius: 999px;       /* hace el óvalo */
+    display: inline-block;      /* ajusta el fondo al contenido */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* opcional: sombrita sutil */
+    
+}
