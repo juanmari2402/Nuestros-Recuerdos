@@ -63,3 +63,127 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* opcional: sombrita sutil */
     
 }
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #FFD1DC, #B0E0E6);
+}
+
+.anecdotaContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 450px;
+    max-width: 300px;
+}
+
+.image-container {
+    margin-bottom: 1.5rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.message-box {
+    color: #333;
+    line-height: 1.6;
+}
+
+.titulo {
+    align-items: center;
+    text-align: center;
+}
+
+.titulo h1 {
+    font-family: "Kranky", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 999px;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ================================= */
+/* 📱 ESTILOS RESPONSIVE */
+/* ================================= */
+
+/* 🔹 Móviles pequeños (hasta 600px) */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .titulo h1 {
+    font-size: 60px;
+    padding: 8px 25px;
+  }
+
+  .anecdotaContainer {
+    flex-direction: column; /* apila las tarjetas */
+    align-items: center;
+    gap: 40px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 350px;
+    padding: 1rem;
+  }
+
+  .message-box {
+    font-size: 16px;
+  }
+}
+
+/* 🔹 Tablets (601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .titulo h1 {
+    font-size: 100px;
+    padding: 10px 30px;
+  }
+
+  .anecdotaContainer {
+    gap: 60px;
+  }
+
+  .card {
+    max-width: 280px;
+  }
+
+  .message-box {
+    font-size: 18px;
+  }
+}
+
+/* 🔹 Pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+  .titulo h1 {
+    font-size: 150px;
+  }
+
+  .message-box {
+    font-size: 20px;
+  }
+}

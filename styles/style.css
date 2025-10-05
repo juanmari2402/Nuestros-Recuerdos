@@ -51,3 +51,43 @@ a:hover {
     font-style: oblique;
     font-weight: bold;
 }
+
+
+
+/* 📱 Dispositivos pequeños (celulares) */
+@media (max-width: 600px) {
+  body {
+    background: linear-gradient(135deg, #FFD1DC, #B0E0E6);
+    padding: 10px;
+  }
+
+  .titulo {
+    font-size: 250%; /* reduce el tamaño del título */
+  }
+
+  .link {
+    font-size: 30px; /* texto más pequeño */
+    height: auto;
+    margin: 20px 0;
+  }
+
+  a {
+    padding: 8px 15px; /* botones más compactos */
+    font-size: 20px;
+  }
+}
+
+/* 💻 Tablets (pantallas medianas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .titulo {
+    font-size: 350%;
+  }
+
+  .link {
+    font-size: 40px;
+  }
+
+  a {
+    padding: 10px 25px;
+  }
+}
